@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBConnection {
     // Database credentials
-    private static final String driverName = "com.mysql.cj.jdbc.Driver";
+    private static final String driverName = "com.mysql.jdbc.Driver";
     private static final String dbUrl = "jdbc:mysql://localhost/crud";
     private static final String username = "root";
     private static final String password = "root";

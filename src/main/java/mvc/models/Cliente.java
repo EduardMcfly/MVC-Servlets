@@ -29,6 +29,7 @@ public class Cliente {
         String sql = "SELECT * FROM clients";
         Statement stmt = con.createStatement();
         rs = stmt.executeQuery(sql);
+        System.out.println(rs);
         ArrayList<Cliente> array = new ArrayList();
         while (rs.next()) {
             Cliente cliente = new Cliente();

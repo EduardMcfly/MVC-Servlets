@@ -3,7 +3,8 @@
     Created on : Aug 23, 2021, 11:20:48 PM
     Author     : andre
 --%>
-
+<%@page import="java.util.List"%>
+<%@page import="java.util.Arrays"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -33,16 +34,16 @@
             <tbody>
             <c:forEach items="${users}" var="user">
                 <tr>
-                    <td><c:out value="${user.getId()}"/></td>
-                <td><c:out value="${user.getType()}"/></td>
-                <td><c:out value="${user.getName()}"/></td>
-                <td><c:out value="${user.getLastName()}"/></td>
-                <td><c:out value="${user.getUserId()}"/></td>
-                <td><c:out value="${user.getPassword()}"/></td>
-                <td><c:out value="${user.getPhoneNumber()}"/></td>
-                <td><c:out value="${user.getEmail()}"/></td>
-                <td><c:out value="${user.getStatus()}"/></td>
-                <td><c:out value="${user.getStatusClient()}"/></td>
+                    <td>${user.getId()}</td>
+                    <td>${user.getType()}</td>
+                    <td>${user.getName()}</td>
+                    <td>${user.getLastName()}</td>
+                    <td>${user.getUserId()}</td>
+                    <td>${user.getPassword()}</td>
+                    <td>${user.getPhoneNumber()}</td>
+                    <td>${user.getEmail()}</td>
+                    <td>${user.getStatus()}</td>
+                    <td>${user.getStatusClient()}</td>
                 </tr>
             </c:forEach>
         </tbody>

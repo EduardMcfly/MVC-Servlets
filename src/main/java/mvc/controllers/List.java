@@ -16,11 +16,12 @@ import mvc.models.Cliente;
  * @author andre
  */
 public class List extends HttpServlet {
-   
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             ArrayList<Cliente> array = Cliente.findAll();
+            System.out.println(array);
             req.setAttribute("users", array);
         } catch (SQLException e) {
             System.out.println(e.getStackTrace());
